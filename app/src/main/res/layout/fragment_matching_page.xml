@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="36.5dp"
+        android:layout_marginTop="150dp"
+        android:text="룸메이트 매칭을 시작하시겠습니까?"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/matching_start"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/question"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#4AC665"
+        android:text="시작하기"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/matching_refuse"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@+id/question"
+        android:layout_toEndOf="@+id/matching_start"
+        android:backgroundTint="#C64A4A"
+        android:text="거절하기"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

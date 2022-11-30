@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sleep">
+        <item>22~23</item>
+        <item>23~24</item>
+        <item>00~01</item>
+        <item>01~02</item>
+    </string-array>
+</resources>

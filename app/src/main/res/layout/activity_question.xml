@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="필수 체크리스트"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택 체크리스트"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="흡연"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="58dp" />
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="운동"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="청소"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="실내취식"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="잠버릇"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="게임"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="음주"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <RadioGroup
+        android:layout_width="199dp"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="119dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="흡연" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="비흡연" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/exercise"
+        android:layout_width="206dp"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="80dp">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:text="함" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="83dp"
+            android:layout_height="25dp"
+            android:text="안함" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/clean"
+        android:layout_width="206dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="19dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise">
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="123dp"
+            android:layout_height="23dp"
+            android:text="함" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="안함" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/eatin"
+        android:layout_width="206dp"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:text="함" />
+
+        <RadioButton
+            android:id="@+id/radioButton25"
+            android:layout_width="88dp"
+            android:layout_height="24dp"
+            android:text="안함" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/sleephab"
+        android:layout_width="206dp"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="154dp" >
+
+        <RadioButton
+            android:id="@+id/radioButton26"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="있음" />
+
+        <RadioButton
+            android:id="@+id/radioButton27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="없음" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/game"
+        android:layout_width="206dp"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="178dp">
+
+        <RadioButton
+            android:id="@+id/radioButton30"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="함" />
+
+        <RadioButton
+            android:id="@+id/radioButton31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="안함" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/alchol"
+        android:layout_width="206dp"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="202dp" >
+
+        <RadioButton
+            android:id="@+id/radioButton32"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="함" />
+
+        <RadioButton
+            android:id="@+id/radioButton33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="안함" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="기상시간"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="취침시간"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="선호 층수"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="반수/편입"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="샤워시간"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="샤워 시간대"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="더위"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="추위"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="공부장소"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="본가 방문 주기"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="음주 빈도"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/btn_endreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입 하기"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="573dp" />
+
+    <Spinner
+        android:id="@+id/spi_shower"
+        android:layout_width="118dp"
+        android:layout_height="22dp"
+        android:entries="@array/shower"
+        app:layout_constraintStart_toStartOf="@+id/exam"
+        app:layout_constraintTop_toBottomOf="@+id/exam" />
+
+
+    <Spinner
+        android:id="@+id/spi_wakeup"
+        android:layout_width="113dp"
+        android:layout_height="22dp"
+        android:entries="@array/wakeup"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <Spinner
+        android:id="@+id/spi_sleep"
+        android:layout_width="113dp"
+        android:layout_height="22dp"
+        android:entries="@array/sleep"
+        app:layout_constraintStart_toStartOf="@+id/spi_wakeup"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <Spinner
+        android:id="@+id/spi_floor"
+        android:layout_width="113dp"
+        android:layout_height="22dp"
+        android:entries="@array/floor"
+        app:layout_constraintStart_toStartOf="@+id/spi_sleep"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <Spinner
+        android:id="@+id/exam"
+        android:layout_width="113dp"
+        android:layout_height="22dp"
+        android:entries="@array/exam"
+        app:layout_constraintStart_toStartOf="@+id/spi_floor"
+        app:layout_constraintTop_toBottomOf="@+id/spi_floor" />
+
+    <Spinner
+        android:id="@+id/gohome"
+        android:layout_width="113dp"
+        android:layout_height="22dp"
+        android:entries="@array/gohome"
+        app:layout_constraintTop_toBottomOf="@+id/study_place"
+        tools:layout_editor_absoluteX="237dp" />
+
+    <Spinner
+        android:id="@+id/alcperiod"
+        android:layout_width="150dp"
+        android:layout_height="22dp"
+        android:entries="@array/alcperiod"
+        app:layout_constraintStart_toStartOf="@+id/gohome"
+        app:layout_constraintTop_toBottomOf="@+id/gohome" />
+
+    <RadioGroup
+        android:id="@+id/when_shower"
+        android:layout_width="150dp"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/spi_shower"
+        tools:layout_editor_absoluteY="377dp">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="아침" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저녁" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/hot"
+        android:layout_width="250dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="406dp">
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:text="많이 탐" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:text="보통" />
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="잘 안탐" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/cold"
+        android:layout_width="250dp"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/hot"
+        app:layout_constraintTop_toBottomOf="@+id/hot" >
+
+        <RadioButton
+            android:id="@+id/radioButton15"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:text="많이 탐" />
+
+        <RadioButton
+            android:id="@+id/radioButton16"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:text="보통" />
+
+        <RadioButton
+            android:id="@+id/radioButton17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="잘 안탐" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/study_place"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/cold"
+        app:layout_constraintTop_toBottomOf="@+id/cold">
+
+        <RadioButton
+            android:id="@+id/radioButton18"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="기숙사" />
+
+        <RadioButton
+            android:id="@+id/radioButton19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그 외 장소" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

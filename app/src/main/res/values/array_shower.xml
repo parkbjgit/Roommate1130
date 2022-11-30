@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shower">
+        <item>0~10분</item>
+        <item>10~20분</item>
+        <item>20~30분</item>
+    </string-array>
+</resources>

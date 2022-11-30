@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gohome">
+        <item>1주</item>
+        <item>2주</item>
+        <item>3주</item>
+        <item>1달</item>
+        <item>2달</item>
+        <item>가지 않음</item>
+    </string-array>
+</resources>
